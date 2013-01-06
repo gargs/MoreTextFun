@@ -18,7 +18,72 @@
 		60F5EE0A1699EF980002AF40 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F5EE091699EF980002AF40 /* Default-568h@2x.png */; };
 		60F5EE0D1699EF980002AF40 /* CTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F5EE0C1699EF980002AF40 /* CTFViewController.m */; };
 		60F5EE101699EF980002AF40 /* CTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60F5EE0E1699EF980002AF40 /* CTFViewController.xib */; };
+		60F5EE421699F0C80002AF40 /* libDTCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EE2F1699F0920002AF40 /* libDTCoreText.a */; };
+		60F5EE441699F0D00002AF40 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EE431699F0D00002AF40 /* libxml2.dylib */; };
+		60F5EE461699F0D90002AF40 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EE451699F0D90002AF40 /* ImageIO.framework */; };
+		60F5EE481699F0E00002AF40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EE471699F0E00002AF40 /* QuartzCore.framework */; };
+		60F5EE4A1699F0E60002AF40 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EE491699F0E60002AF40 /* CoreText.framework */; };
+		60F5EE4C1699F0EC0002AF40 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EE4B1699F0EC0002AF40 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60F5EE2A1699F0920002AF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = DemoApp;
+		};
+		60F5EE2C1699F0920002AF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A70F119B14863198009202BF;
+			remoteInfo = "Static Framework";
+		};
+		60F5EE2E1699F0920002AF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A70F11DE148632CD009202BF;
+			remoteInfo = "Static Library";
+		};
+		60F5EE301699F0920002AF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A788CA681486456100E1AFD9;
+			remoteInfo = UnitTest;
+		};
+		60F5EE321699F0920002AF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7949A5814CC456000A8CCDE;
+			remoteInfo = MacUnitTest;
+		};
+		60F5EE341699F0920002AF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7F7EFCD1573603100F5A4D0;
+			remoteInfo = "Static Library (no DTFoundation)";
+		};
+		60F5EE361699F0920002AF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2262DC61638331500BFDAD7;
+			remoteInfo = "Mac Framework";
+		};
+		60F5EE4D1699F1940002AF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A70F11DD148632CD009202BF;
+			remoteInfo = "Static Library";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		60F5EDEF1699EF980002AF40 /* MoreTextFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreTextFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +102,12 @@
 		60F5EE0B1699EF980002AF40 /* CTFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTFViewController.h; sourceTree = "<group>"; };
 		60F5EE0C1699EF980002AF40 /* CTFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTFViewController.m; sourceTree = "<group>"; };
 		60F5EE0F1699EF980002AF40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CTFViewController.xib; sourceTree = "<group>"; };
+		60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = Externals/DTCoreText/DTCoreText.xcodeproj; sourceTree = SOURCE_ROOT; };
+		60F5EE431699F0D00002AF40 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		60F5EE451699F0D90002AF40 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		60F5EE471699F0E00002AF40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		60F5EE491699F0E60002AF40 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		60F5EE4B1699F0EC0002AF40 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +115,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F5EE4C1699F0EC0002AF40 /* MobileCoreServices.framework in Frameworks */,
+				60F5EE4A1699F0E60002AF40 /* CoreText.framework in Frameworks */,
+				60F5EE481699F0E00002AF40 /* QuartzCore.framework in Frameworks */,
+				60F5EE461699F0D90002AF40 /* ImageIO.framework in Frameworks */,
+				60F5EE441699F0D00002AF40 /* libxml2.dylib in Frameworks */,
+				60F5EE421699F0C80002AF40 /* libDTCoreText.a in Frameworks */,
 				60F5EDF41699EF980002AF40 /* UIKit.framework in Frameworks */,
 				60F5EDF61699EF980002AF40 /* Foundation.framework in Frameworks */,
 				60F5EDF81699EF980002AF40 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +133,11 @@
 		60F5EDE41699EF980002AF40 = {
 			isa = PBXGroup;
 			children = (
+				60F5EE4B1699F0EC0002AF40 /* MobileCoreServices.framework */,
+				60F5EE491699F0E60002AF40 /* CoreText.framework */,
+				60F5EE471699F0E00002AF40 /* QuartzCore.framework */,
+				60F5EE451699F0D90002AF40 /* ImageIO.framework */,
+				60F5EE431699F0D00002AF40 /* libxml2.dylib */,
 				60F5EDF91699EF980002AF40 /* MoreTextFun */,
 				60F5EDF21699EF980002AF40 /* Frameworks */,
 				60F5EDF01699EF980002AF40 /* Products */,
@@ -83,6 +165,7 @@
 		60F5EDF91699EF980002AF40 /* MoreTextFun */ = {
 			isa = PBXGroup;
 			children = (
+				60F5EE161699F07B0002AF40 /* Externals */,
 				60F5EE021699EF980002AF40 /* CTFAppDelegate.h */,
 				60F5EE031699EF980002AF40 /* CTFAppDelegate.m */,
 				60F5EE0B1699EF980002AF40 /* CTFViewController.h */,
@@ -107,6 +190,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		60F5EE161699F07B0002AF40 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		60F5EE181699F0910002AF40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60F5EE2B1699F0920002AF40 /* RTDemoApp.app */,
+				60F5EE2D1699F0920002AF40 /* DTCoreText.framework */,
+				60F5EE2F1699F0920002AF40 /* libDTCoreText.a */,
+				60F5EE311699F0920002AF40 /* UnitTest.octest */,
+				60F5EE331699F0920002AF40 /* MacUnitTest.octest */,
+				60F5EE351699F0920002AF40 /* libDTCoreText_no_DTFoundation.a */,
+				60F5EE371699F0920002AF40 /* DTCoreText.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +226,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				60F5EE4E1699F1940002AF40 /* PBXTargetDependency */,
 			);
 			name = MoreTextFun;
 			productName = MoreTextFun;
@@ -147,12 +253,70 @@
 			mainGroup = 60F5EDE41699EF980002AF40;
 			productRefGroup = 60F5EDF01699EF980002AF40 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 60F5EE181699F0910002AF40 /* Products */;
+					ProjectRef = 60F5EE171699F0910002AF40 /* DTCoreText.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				60F5EDEE1699EF980002AF40 /* MoreTextFun */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		60F5EE2B1699F0920002AF40 /* RTDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RTDemoApp.app;
+			remoteRef = 60F5EE2A1699F0920002AF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60F5EE2D1699F0920002AF40 /* DTCoreText.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DTCoreText.framework;
+			remoteRef = 60F5EE2C1699F0920002AF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60F5EE2F1699F0920002AF40 /* libDTCoreText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDTCoreText.a;
+			remoteRef = 60F5EE2E1699F0920002AF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60F5EE311699F0920002AF40 /* UnitTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTest.octest;
+			remoteRef = 60F5EE301699F0920002AF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60F5EE331699F0920002AF40 /* MacUnitTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MacUnitTest.octest;
+			remoteRef = 60F5EE321699F0920002AF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60F5EE351699F0920002AF40 /* libDTCoreText_no_DTFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDTCoreText_no_DTFoundation.a;
+			remoteRef = 60F5EE341699F0920002AF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		60F5EE371699F0920002AF40 /* DTCoreText.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DTCoreText.framework;
+			remoteRef = 60F5EE361699F0920002AF40 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		60F5EDED1699EF980002AF40 /* Resources */ = {
@@ -181,6 +345,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60F5EE4E1699F1940002AF40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Static Library";
+			targetProxy = 60F5EE4D1699F1940002AF40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		60F5EDFC1699EF980002AF40 /* InfoPlist.strings */ = {
@@ -255,10 +427,13 @@
 		60F5EE141699EF980002AF40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoreTextFun/MoreTextFun-Prefix.pch";
 				INFOPLIST_FILE = "MoreTextFun/MoreTextFun-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -266,10 +441,13 @@
 		60F5EE151699EF980002AF40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoreTextFun/MoreTextFun-Prefix.pch";
 				INFOPLIST_FILE = "MoreTextFun/MoreTextFun-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -293,6 +471,7 @@
 				60F5EE151699EF980002AF40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

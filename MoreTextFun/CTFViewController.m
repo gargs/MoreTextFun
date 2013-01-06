@@ -7,8 +7,11 @@
 //
 
 #import "CTFViewController.h"
+#import <DTCoreText.h>
 
 @interface CTFViewController ()
+
+@property (nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -24,6 +27,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)dismissKeyboard:(id)sender
+{
+    [_textView resignFirstResponder];
+    
+    NSString *htmlString = @"<html><b>HELLO</b>WORLD</html>";
+    
+    NSData *htmlData = [htmlString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSMutableDictionary *options = [NSMutableDictionary dictionary];
+    [options setObject:[NSNumber numberWithBool:YES] forKey:@"DTUseiOS6Attributes"];
+    
+    NSAttributedString *string = [[NSAttributedString alloc] initWithHTMLData:htmlData options:options documentAttributes:NULL];
+    
+    self.textView.attributedText = string;
 }
 
 @end
