@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CTFViewController : UIViewController
+@interface CTFViewController : UIViewController <UITextViewDelegate>
 
 @end
