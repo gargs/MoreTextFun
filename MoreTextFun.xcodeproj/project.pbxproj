@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60D7AB3B169A1E010045E77B /* CTFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D7AB3A169A1E010045E77B /* CTFTextView.m */; };
 		60F5EDF41699EF980002AF40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EDF31699EF980002AF40 /* UIKit.framework */; };
 		60F5EDF61699EF980002AF40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EDF51699EF980002AF40 /* Foundation.framework */; };
 		60F5EDF81699EF980002AF40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F5EDF71699EF980002AF40 /* CoreGraphics.framework */; };
@@ -86,6 +87,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60D7AB39169A1E010045E77B /* CTFTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFTextView.h; sourceTree = "<group>"; };
+		60D7AB3A169A1E010045E77B /* CTFTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFTextView.m; sourceTree = "<group>"; };
 		60F5EDEF1699EF980002AF40 /* MoreTextFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreTextFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F5EDF31699EF980002AF40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		60F5EDF51699EF980002AF40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 				60F5EE0C1699EF980002AF40 /* CTFViewController.m */,
 				60F5EE0E1699EF980002AF40 /* CTFViewController.xib */,
 				60F5EDFA1699EF980002AF40 /* Supporting Files */,
+				60D7AB39169A1E010045E77B /* CTFTextView.h */,
+				60D7AB3A169A1E010045E77B /* CTFTextView.m */,
 			);
 			path = MoreTextFun;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				60F5EE001699EF980002AF40 /* main.m in Sources */,
 				60F5EE041699EF980002AF40 /* CTFAppDelegate.m in Sources */,
 				60F5EE0D1699EF980002AF40 /* CTFViewController.m in Sources */,
+				60D7AB3B169A1E010045E77B /* CTFTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

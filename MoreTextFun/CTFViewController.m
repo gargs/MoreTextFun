@@ -8,10 +8,11 @@
 
 #import "CTFViewController.h"
 #import <DTCoreText.h>
+#import "CTFTextView.h"
 
 @interface CTFViewController ()
 
-@property (nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic) IBOutlet CTFTextView *textView;
 @property (nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
@@ -23,8 +24,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _textView.attributedText = [[NSAttributedString alloc] initWithString:_textView.text];
+//    _textView.attributedText = [[NSAttributedString alloc] initWithString:_textView.text];
     _doneButton.enabled = NO;
+    
+    //add menu controls
+//    UIMenuItem *bold = [[UIMenuItem alloc] initWithTitle:@"Bold" action:@selector(toggleBoldface:)];
+//    UIMenuItem *italics = [[UIMenuItem alloc] initWithTitle:@"Italics" action:@selector(doItalics:)];
+//    UIMenuItem *underline = [[UIMenuItem alloc] initWithTitle:@"Underline" action:@selector(doUnderline:)];
+//    
+//    [[UIMenuController sharedMenuController] setMenuItems:@[bold,italics,underline]];
+    
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuVisible:) name:UIMenuControllerWillShowMenuNotification object:nil];
+//    
 }
 
 - (void)didReceiveMemoryWarning
