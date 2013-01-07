@@ -22,6 +22,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Register for keyboard notifications to reduce the height of the UITextView
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     
 //    _textView.attributedText = [[NSAttributedString alloc] initWithString:_textView.text];
@@ -74,6 +79,25 @@
     _doneButton.enabled = NO;
     
     return YES;
+}
+
+#pragma mark - Custom Methods
+
+- (void)keyboardWasShown:(NSNotification *)notification
+{
+    NSDictionary *info = [notification userInfo];
+    CGSize keyboardSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0);
+    _textView.contentInset = contentInsets;
+    _textView.scrollIndicatorInsets = contentInsets;
+}
+
+- (void)keyboardWillHide:(NSNotification *)notification
+{
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    _textView.contentInset = contentInsets;
+    _textView.scrollIndicatorInsets = contentInsets;
 }
 
 @end
